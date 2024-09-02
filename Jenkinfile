@@ -2,10 +2,14 @@ pipeline {
     agent any  
     stages {  
             stage ('Gretting') { 
-              bat("Hiii")
+            steps{
+              bat "Hiii"
+            }
             }
             stage ('Run_code') {  
-               bat("Running Code") 
+            steps{
+               bat "Running Code"
+            }
             }  
     }  
 }  
